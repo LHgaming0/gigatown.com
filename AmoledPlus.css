@@ -36,11 +36,11 @@ body{
 }
 
 .themedBackground__6b1b6{
-    background: rgba(0, 0, 0, 0.750);
-    border: 2px solid rgb(21, 21, 26);
+    background: rgb(21, 21, 26);
+    border: 2px solid rgba(36, 36, 36, 0.75);
 }
 
-.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .textContainer__709ff pre, .footer__06f4b, .textContainer__709ff, .wrapper_efe67f, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d{
+.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .textContainer__709ff pre, .footer__06f4b, .textContainer__709ff, .wrapper_efe67f, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d, .vc-addon-card, .lookFilled__3dba3.select__0eb48, .inner__999f6, .searchBar_e0c60b, .{
     background-color: rgb(21, 21, 26);
 }
 
