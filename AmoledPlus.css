@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
 
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--default-font), 'gg sans normal';
     font-weight: 500;
     text-shadow: 0 0 2px;
     transition: all 0.15s;
@@ -18,15 +20,12 @@ body{
     border: black 2px solid;
 }
 
-.scrollerBase_dc3aa9, .customTheme_db4d28, .auto_a48086, .container_b2ce9c, .header__104ca, .searchBar_e4ea2a, .theme-dark .themed_b152d4, .theme-dark .container_ca50b9, .theme-dark .children__32014::after, .expandedFolderBackground__1bec6, .expandedFolderIconWrapper__458cf, .theme-dark .scroller__4b984, .container__4f20e, .jumpToPresentBar__0ff7f, .accountProfileCard__22589, .fieldList_aab0de, .background_b61fcc, .userProfileInnerThemedNonPremium__3d0a6, .contentWrapper__321ed, .wrapper__7a35f, .unicodeShortcut__1dd6b, .inspector__17331, .inspector__993e1, .standardStickerShortcut__5254d, .container_d667ff, .navButtons__484bf, .footer__030ec, .header__6d5ea, .footer__89240, .newMosaicStyle__8d3be .codeView__8b1ff, .peopleColumn__51df3, .previewMessage__1075c, .replyBar_b64d74, .cardPrimary_cb7a0e.outline_cb0aed{
-    background: rgba(0, 0, 0, 0.711);
-}
 
 .scroller__3d071{
-    background: linear-gradient(45deg, rgba(0, 0, 255, 0.711) 35%, rgba(128, 0, 128, 0.711), rgba(76, 0, 130, 0.711));
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.211) 35%, rgba(128, 0, 128, 0.211), rgba(76, 0, 130, 0.311));
 }
 .platform-win .bg__12180{
-    background: linear-gradient(45deg, rgba(76, 0, 130, 0.711) 33%, rgba(128, 0, 128, 0.711), rgba(0, 0, 255, 0.711));
+    background: linear-gradient(45deg, rgba(76, 0, 130, 0.211) 33%, rgba(128, 0, 128, 0.211), rgba(0, 0, 255, 0.211));
 }
 
 .form__13a2c{
@@ -41,11 +40,35 @@ body{
     border: 2px solid rgba(36, 36, 36, 0.75);
     border-radius: 24px;
 }
-
-.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .textContainer__709ff pre, .footer__06f4b, .textContainer__709ff, .wrapper_efe67f, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d, .vc-addon-card, .lookFilled__3dba3.select__0eb48, .inner__999f6, .searchBar_e0c60b, .radioBar__40e1b, .radioPositionLeft__1d40a, .buttonsInner_bca8fa, .wrapper_c727b6, .theme-dark .panel_bd8c76{
-    background-color: rgb(21, 21, 26);
+.scroller__1f96e{
+    background: linear-gradient(115deg, black, rgba(255, 255, 255, 0.027), var(--default-background));
 }
-
+.header__6d5ea, .footer__89240, .content__764ce, .contentWrapper__321ed, .wrapper__7a35f, .header__55964{
+    background: rgba(0, 0, 0, 0.711);
+}
+.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .textContainer__709ff pre, .footer__06f4b, .textContainer__709ff, .wrapper_efe67f, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d, .vc-addon-card, .lookFilled__3dba3.select__0eb48, .inner__999f6, .searchBar_e0c60b, .radioBar__40e1b, .radioPositionLeft__1d40a, .buttonsInner_bca8fa, .wrapper_c727b6, .theme-dark .panel_bd8c76, .inner__178b2, .inspector__993e1, .scroller_e89578, .navButtonActive__735cb, .inputDefault__80165, .theme-dark .bioTextArea_a108c9{
+    background: rgb(21, 21, 26);
+}
+.scroller_e89578, .inner__178b2{
+    transition: none;
+}
+.userProfileInnerThemedNonPremium__3d0a6{
+    background: rgba(0, 0, 0, 0.711);
+}
+.userPanelInnerThemed__1804b{
+    background: rgb(21, 21, 26);
+}
+.top__592a7 .brand_ce3ecf.selected__5711d.item__48dda{
+    border-bottom-color: var(--default-color);
+}
+.lookOutlined__46d54.colorBrand_b2253e{
+    color: var(--default-color);
+    border-color: var(--default-color);
+}
+.lookOutlined__46d54.colorBrand_b2253e:hover{
+    background-color: var(--default-color);
+    color: white;
+}
 .closedFolderIconWrapper__7321f{
     opacity: 0.711;
 }
@@ -59,7 +82,9 @@ body{
 .mentioned__58017{
     background: rgba(255, 68, 0, 0.2);
 }
-
+.selected__9800b .layout_bb8e67{
+    background-color: var(--default-color);
+}
 .lookFilled__19298.colorBrand_b2253e{
     background: var(--default-color);
     font-family: 'Nunito', sans-serif;
@@ -77,16 +102,65 @@ body{
     background: var(--default-color);
     font-family: 'Nunito', sans-serif;
 }
-.botTagRegular_c89c9a, .buttonColor__6f6b0:hover{
-    background: var(--default-color);
-    opacity: 0.9;
-}
-.botTagRegular_c89c9a, .buttonColor__6f6b0:active{
-    background: var(--default-color);
-    opacity: 0.7;
-}
-
-
 .selectionCircle_f4288e{
     box-shadow: inset 0 0 0 2px var(--default-color),inset 0 0 0 4px var(--default-color);
+}
+.newChannel_f99b92{
+    color: white;
+}
+
+:root{  
+--background-primary: rgba(0, 0, 0, 0.711);
+--background-secondary: rgba(0, 0, 0, 0.711);
+--background-secondary-alt: rgba(0, 0, 0, 0.711);
+--background-tertiary: rgb(21, 21, 26);
+--background-accent: rgb(21, 21, 26);
+--brand: var(--default-color);
+--brand-260: var(--default-color);
+--brand-500: var(--default-color);
+--brand-experiment-100: var(--default-color);
+--brand-experiment-130: var(--default-color);
+--brand-experiment-160: var(--default-color);
+--brand-experiment-200: var(--default-color);
+--brand-experiment-230: var(--default-color);
+--brand-experiment-260: var(--default-color);
+--brand-experiment-300: var(--default-color);
+--brand-experiment-330: var(--default-color);
+--brand-experiment-360: var(--default-color);
+--brand-experiment-400: var(--default-color);
+--brand-experiment-430: var(--default-color);
+--brand-experiment-460: var(--default-color);
+--brand-experiment: var(--default-color);
+--brand-experiment-500: var(--default-color);
+--brand-experiment-530: var(--default-color);
+--brand-experiment-560: var(--default-color);
+--brand-experiment-600: var(--default-color);
+--brand-experiment-630: var(--default-color);
+--brand-experiment-660: var(--default-color);
+--brand-experiment-700: var(--default-color);
+--brand-experiment-730: var(--default-color);
+--brand-experiment-760: var(--default-color);
+--brand-experiment-800: var(--default-color);
+--brand-experiment-830: var(--default-color);
+--brand-experiment-860: var(--default-color);
+--brand-experiment-900: var(--default-color);
+--brand-experiment-05a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-10a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-15a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-20a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-25a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-30a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-35a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-40a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-45a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-50a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-55a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-60a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-65a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-70a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-75a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-80a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-85a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-90a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-95a: hsl(var(--default-color)-500-hsl);
 }
