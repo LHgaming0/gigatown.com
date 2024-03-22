@@ -1,63 +1,215 @@
+/**
+ * @name AmoledPlus Latest
+ * @author LHgaming
+ * @version 0.2.0
+ * @description A customizable Dark theme for Discord.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 @import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700|Righteous);
+
+:root{
+    --default-color: rgb(40, 108, 255); /* Change the default colour of discord.
+    Default: rgb(40, 108, 255);
+    Discord: rgb(88 101 242);
+
+    PRESET COLOURS
+    Red: rgb(212, 63, 63);
+    Orange: rgb(197, 84, 32);
+    Yellow: rgb(206, 175, 0);
+    Green: rgb(41, 161, 36);
+    Blue: rgb(50, 88, 255);
+    Pink: rgb(195, 83, 223);
+    Purple: rgb(104, 42, 250);
+    Black: rgb(21, 21, 26);
+    */
+
+    --background-image: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg); /* 
+    Choose your background image
+    Dark: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg);
+    Light: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Light.jpg);
+    Set to none if you want a completely dark theme
+    Set to a colour if you want a colour theme
+    */
+
+    --background-blur: unset; /* Change the blur of the background image
+    Default: unset;
+    Set to any amount of pixels.
+    Eg:- 10px;
+    */
+
+    --default-font: 'Poppins'; /* Change the default font of discord.
+    Default: 'Poppins' (remember to copy the quotation marks)
+    Discord: 'Discord'
+    Nunito: 'Nunito'
+    Roboto: 'Roboto'
+    Righteous: 'Righteous'
+    */
+}
 
 
 *{
     font-family: var(--default-font), 'gg sans normal';
     font-weight: 500;
     text-shadow: 0 0 2px;
-    transition: all 0.15s;
 }
 body{
-    background-color: transparent;
-}
-*:hover{
-    transition: all 0.15s;
-}
-
-#app-mount{
-    border-radius: 12px;
-    border: black 2px solid;
+    background: var(--background-accent);
 }
 
 
+
+/* Background Colours */
 .scroller__3d071{
-    background: linear-gradient(45deg, rgba(0, 0, 255, 0.211) 35%, rgba(128, 0, 128, 0.211), rgba(76, 0, 130, 0.311));
+    background: rgba(0, 0, 0, 0.711);
 }
 .platform-win .bg__12180{
-    background: linear-gradient(45deg, rgba(76, 0, 130, 0.211) 33%, rgba(128, 0, 128, 0.211), rgba(0, 0, 255, 0.211));
+    background: rgba(0, 0, 0, 0.711);
 }
-
+.theme-dark .scroller__4b984{
+    background: var(--background-primary);
+}
+.container__0a6a9{
+    background: var(--background-secondary);
+}
+.base__3e6af, .wrapper__2d9b1{
+    background: var(--background-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: var(--radius-xl);
+    margin: 0 10px 10px 0;
+}
+.scroller__1f96e{
+    /* background-image: linear-gradient(115deg, black, rgba(255, 255, 255, 0.027), var(--default-background)); */
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+    backdrop-filter: blur(var(--background-blur));
+}
+.members__9f47b{
+    background: transparent;
+}
 .form__13a2c{
     padding: 0;
-    background: rgba(0, 0, 0, 0.711);
+    background: transparent;
 }
 .channelTextArea__2e60f{
     background: transparent;
 }
-.themedBackground__6b1b6{
-    background: rgb(21, 21, 26);
-    border: 2px solid rgba(36, 36, 36, 0.75);
-    border-radius: 24px;
+.closedFolderIconWrapper__7321f{
+    opacity: 0.711;
 }
-.scroller__1f96e{
-    background: linear-gradient(115deg, black, rgba(255, 255, 255, 0.027), var(--default-background));
-}
-.header__6d5ea, .footer__89240, .content__764ce, .contentWrapper__321ed, .wrapper__7a35f, .header__55964{
-    background: rgba(0, 0, 0, 0.711);
-}
-.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .textContainer__709ff pre, .footer__06f4b, .textContainer__709ff, .wrapper_efe67f, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d, .vc-addon-card, .lookFilled__3dba3.select__0eb48, .inner__999f6, .searchBar_e0c60b, .radioBar__40e1b, .radioPositionLeft__1d40a, .buttonsInner_bca8fa, .wrapper_c727b6, .theme-dark .panel_bd8c76, .inner__178b2, .inspector__993e1, .scroller_e89578, .navButtonActive__735cb, .inputDefault__80165, .theme-dark .bioTextArea_a108c9{
-    background: rgb(21, 21, 26);
-}
-.scroller_e89578, .inner__178b2{
-    transition: none;
+.childWrapper__01b9c{
+    background-color: var(--background-accent);
 }
 .userProfileInnerThemedNonPremium__3d0a6{
     background: rgba(0, 0, 0, 0.711);
 }
-.userPanelInnerThemed__1804b{
+
+
+.header__6d5ea, .footer__89240, .content__764ce, .contentWrapper__321ed, .wrapper__7a35f, .header__55964, .container_b2ce9c, .theme-dark .directoryContainer_d3edd9, .scroller_cc9b9a, .contentRegionScroller__86c79, .list__5ced9, .grid__36f14, .container__6eaa3, .theme-dark .themed_b152d4, .authBox__7196a[data-theme=dark]{
+    background: rgba(0, 0, 0, 0.511);
+}
+.button__66e8c.buttonColor_a6eb73, .lookFilled__19298.colorPrimary__6ed40, .container__73245, .markup_a7e664 code, .grid_c7c4e6, .description__883d4, .theme-dark .invalidPoop__03aa3, .wrapper__6e669, .section_efc22d, .vc-addon-card, .lookFilled__3dba3.select__0eb48, .inner__999f6, .searchBar_e0c60b, .radioBar__40e1b, .radioPositionLeft__1d40a, .buttonsInner_bca8fa, .wrapper_c727b6, .theme-dark .panel_bd8c76, .inner__178b2, .inspector__993e1, .scroller_e89578, .navButtonActive__735cb, .inputDefault__80165, .theme-dark .bioTextArea_a108c9{
     background: rgb(21, 21, 26);
 }
+
+/* Border Radius*/
+.link__95dc0, .channel_c21703, .side_b4b3f6 .item__48dda, .theme-dark .tile_ebc93b, .wrapper_efe67f, .button_afdfd9, .embedFull__8dc21, .grid_c7c4e6, .container__467eb, .loadingPopout__5f0e8, .searchBar_e4ea2a .searchBarComponent__22760, .input_d266e7, .inner__999f6, .container__7712a, .labelContainer_bc2861{
+    border-radius: var(--radius-sm);
+}
+.userPopoutOverlayBackground_d8afa4, .imageWrapper_fd6587{
+    border-radius: var(--radius-md);
+}
+.userPopoutOuter_d739b2, .accountProfileCard__22589, button.button__4f306, span.button__4f306, .withTagAsButton_cc125f:hover, .withTagless__98b7d:hover{
+    border-radius: var(--radius-xl);
+}
+.banner__6d414{
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+}
+.colorable_c84c4c.primaryDark__6b700, .colorable_c84c4c.red_a51ba8, .colorable_c84c4c.green__7e4a1{
+    border-radius: 100%;
+}
+
+
+
+/* Menu Elements */
+.themedBackground__6b1b6{
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(36, 36, 36, 0.75);
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.15);
+    margin: 0 15px 0 5px;
+}
+.scroller__750f5{
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(36, 36, 36, 0.75);
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.15);
+}
+.menu_dc52c6{
+    background: none;
+    box-shadow: none;
+}
+.container__590e2, .privateChannels__93473{
+    margin-bottom: -80px;
+}
+.sidebar_ded4b5, .privateChannels__93473{
+    background: var(--background-secondary);
+}
+.content__23cab{
+    padding-bottom: 80px;
+}
+.theme-dark .container_ca50b9{
+    background-color: rgba(0, 0, 0, 0.211);
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--background-quaternary);
+    margin: 0px 4px 15px 4px;
+    border-radius: var(--radius-round);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.wrapper__0ed4a{
+    background: none;
+}
+.avatarWrapper_ba5175{
+    margin: -1px;
+}
+.panels__58331{
+    background: none;
+}
+.message__80c10{
+    border: 2px solid rgba(21, 21, 26, 0.63);
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.mentioned__58017{
+    background: rgba(255, 68, 0, 0.2);
+    transition: background 0.07s;
+}
+.wrapper_f46140{
+    color: white;
+    background: var(--default-color);
+}
+.message__80c10.ephemeral_c26b64.selected_fd9051, .mouse-mode.full-motion .message__80c10.ephemeral_c26b64:hover{
+    background: rgba(255, 68, 0, 0.3);
+    transition: background 0.07s;
+}
+.scroller_e89578, .inner__178b2{
+    transition: none;
+}
+.numberBadge__50328{
+    box-shadow: 0px 0px 10px 2px var(--status-danger);
+}
+.item_f9d377, .unreadImportant_c775b3{
+    box-shadow: 0 0 15px var(--header-primary);
+}
+
+
+
+/* Variables */
 .top__592a7 .brand_ce3ecf.selected__5711d.item__48dda{
     border-bottom-color: var(--default-color);
 }
@@ -69,25 +221,12 @@ body{
     background-color: var(--default-color);
     color: white;
 }
-.closedFolderIconWrapper__7321f{
-    opacity: 0.711;
-}
 
-.message__80c10{
-    border: 2px solid rgb(21, 21, 26);
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-.mentioned__58017{
-    background: rgba(255, 68, 0, 0.2);
-}
 .selected__9800b .layout_bb8e67{
     background-color: var(--default-color);
 }
 .lookFilled__19298.colorBrand_b2253e{
     background: var(--default-color);
-    font-family: 'Nunito', sans-serif;
 }
 .lookFilled__19298.colorBrand_b2253e:hover{
     background: var(--default-color);
@@ -105,16 +244,35 @@ body{
 .selectionCircle_f4288e{
     box-shadow: inset 0 0 0 2px var(--default-color),inset 0 0 0 4px var(--default-color);
 }
+
 .newChannel_f99b92{
-    color: white;
+    color: var(--white-500);
 }
 
+/* Main Variables */
+:root{
+    --home-background: var(--background-secondary);
+    --background-primary: rgba(0, 0, 0, 0.011);
+    --background-secondary: rgba(0, 0, 0, 0.311);
+    --background-secondary-alt: rgba(0, 0, 0, 0.711);
+    --background-tertiary: rgb(21, 21, 26);
+    --background-accent: rgb(21, 21, 26);
+    --background-quaternary: rgb(57, 57, 70);
+    --background-modifier-selected: var(--default-color);
+    --font-primary: var(--default-font);
+    --font-display: var(--default-font);
+    --radius-none: 0px;
+    --radius-xs: 4px;
+    --radius-sm: 11px;
+    --radius-md: 15px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-xxl: 32px;
+    --radius-round: 2147483647px;
+}
+
+/* Colour Variables */
 :root{  
---background-primary: rgba(0, 0, 0, 0.711);
---background-secondary: rgba(0, 0, 0, 0.711);
---background-secondary-alt: rgba(0, 0, 0, 0.711);
---background-tertiary: rgb(21, 21, 26);
---background-accent: rgb(21, 21, 26);
 --brand: var(--default-color);
 --brand-260: var(--default-color);
 --brand-500: var(--default-color);
@@ -144,23 +302,50 @@ body{
 --brand-experiment-830: var(--default-color);
 --brand-experiment-860: var(--default-color);
 --brand-experiment-900: var(--default-color);
---brand-experiment-05a: hsl(var(--default-color)-500-hsl);
---brand-experiment-10a: hsl(var(--default-color)-500-hsl);
---brand-experiment-15a: hsl(var(--default-color)-500-hsl);
---brand-experiment-20a: hsl(var(--default-color)-500-hsl);
---brand-experiment-25a: hsl(var(--default-color)-500-hsl);
---brand-experiment-30a: hsl(var(--default-color)-500-hsl);
---brand-experiment-35a: hsl(var(--default-color)-500-hsl);
---brand-experiment-40a: hsl(var(--default-color)-500-hsl);
---brand-experiment-45a: hsl(var(--default-color)-500-hsl);
---brand-experiment-50a: hsl(var(--default-color)-500-hsl);
---brand-experiment-55a: hsl(var(--default-color)-500-hsl);
---brand-experiment-60a: hsl(var(--default-color)-500-hsl);
---brand-experiment-65a: hsl(var(--default-color)-500-hsl);
---brand-experiment-70a: hsl(var(--default-color)-500-hsl);
---brand-experiment-75a: hsl(var(--default-color)-500-hsl);
---brand-experiment-80a: hsl(var(--default-color)-500-hsl);
---brand-experiment-85a: hsl(var(--default-color)-500-hsl);
---brand-experiment-90a: hsl(var(--default-color)-500-hsl);
---brand-experiment-95a: hsl(var(--default-color)-500-hsl);
+--brand-experiment-05a: var(--default-color);
+--brand-experiment-10a: var(--default-color);
+--brand-experiment-15a: var(--default-color);
+--brand-experiment-20a: var(--default-color);
+--brand-experiment-25a: var(--default-color);
+--brand-experiment-30a: var(--default-color);
+--brand-experiment-35a: var(--default-color);
+--brand-experiment-40a: var(--default-color);
+--brand-experiment-45a: var(--default-color);
+--brand-experiment-50a: var(--default-color);
+--brand-experiment-55a: var(--default-color);
+--brand-experiment-60a: var(--default-color);
+--brand-experiment-65a: var(--default-color);
+--brand-experiment-70a: var(--default-color);
+--brand-experiment-75a: var(--default-color);
+--brand-experiment-80a: var(--default-color);
+--brand-experiment-85a: var(--default-color);
+--brand-experiment-90a: var(--default-color);
+--brand-experiment-95a: var(--default-color);
+--brand-100: var(--default-color);
+--brand-130: var(--default-color);
+--brand-160: var(--default-color);
+--brand-200: var(--default-color);
+--brand-230: var(--default-color);
+--brand-260: var(--default-color);
+--brand-300: var(--default-color);
+--brand-330: var(--default-color);
+--brand-345: var(--default-color);
+--brand-360: var(--default-color);
+--brand-400: var(--default-color);
+--brand-430: var(--default-color);
+--brand-460: var(--default-color);
+--brand-500: var(--default-color);
+--brand-530: var(--default-color);
+--brand-560: var(--default-color);
+--brand-600: var(--default-color);
+--brand-630: var(--default-color);
+--brand-660: var(--default-color);
+--brand-700: var(--default-color);
+--brand-730: var(--default-color);
+--brand-760: var(--default-color);
+--brand-800: var(--default-color);
+--brand-830: var(--default-color);
+--brand-860: var(--default-color);
+--brand-900: var(--default-color);
+--green-360: var(--default-color);
 }
