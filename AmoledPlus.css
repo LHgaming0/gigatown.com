@@ -10,7 +10,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700|Righteous);
 
 :root{
-    --default-color: rgb(40, 108, 255); /* Change the default colour of discord.
+    --default-color: unset; /* Change the default colour of discord.
     Default: rgb(40, 108, 255);
     Discord: rgb(88 101 242);
 
@@ -25,7 +25,7 @@
     Black: rgb(21, 21, 26);
     */
 
-    --background-image: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg); /* 
+    --background-image: unset; /* 
     Choose your background image
     Dark: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg);
     Light: url(https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Light.jpg);
@@ -39,7 +39,7 @@
     Eg:- 10px;
     */
 
-    --default-font: 'Poppins'; /* Change the default font of discord.
+    --default-font: unset; /* Change the default font of discord.
     Default: 'Poppins' (remember to copy the quotation marks)
     Discord: 'Discord'
     Nunito: 'Nunito'
